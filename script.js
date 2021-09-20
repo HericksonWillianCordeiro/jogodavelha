@@ -71,9 +71,11 @@ function togglePlayer() {
 function checkGame() {
     if(checkWinnerFor('X')) {
         warning = ' "X" venceu';
+        window.alert("X foi o vencedor")
         playing = false;
     } else if(checkWinnerFor('O')) {
         warning = ' "O" venceu';
+        window.alert("O foi o vencedor")
         playing = false;
     } else if(isFull()) {
         warning = 'Deu empate';
